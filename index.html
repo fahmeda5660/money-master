@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <h2 class="text-5xl mt-6 text-center  text-[#31A5AC] ">Money Master</h2>
+    <main>
+        <section class="w-5/6 mx-auto mt-12 mb-12">
+            <div class="grid lg:grid-cols-3 gap-4">
+                <div class="lg:col-span-2">
+                    <img class="h-[700px] image-fluid w-full" src="money.png" alt="">
+                </div>
+                <div class="p-8 bg-[#F8F8F8] text-center lg:col-span-1">
+                    <!-- income  -->
+                    <div>
+                        <h2 class="m-5 font-medium text">Income</h2>
+                        <label class="inline-block w-1/5">Income: </label>
+                        <input id="income-field" class="rounded-lg w-2/5 px-2 py-2 mx-4 bg-gray-300 hover:focus:text-base"
+                            type="number" name="">
+                    </div>
+                    <!-- expenses -->
+                    <div>
+                        <h2 class="m-5 font-medium">Expenses</h2>
+                        <label class="inline-block w-1/5">Food: </label>
+                        <input id="food-field" class="rounded-lg w-2/5 mb-2 px-2 py-2 mx-4 bg-gray-300 hover:focus:text-base"
+                            type="number" name="">
+                        <br>
+                        <label class="inline-block w-1/5">Rent: </label>
+                        <input id="rent-field" class=" rounded-lg w-2/5 mb-2 px-2 py-2 mx-4 bg-gray-300 hover:focus:text-base"
+                            type="number" name="">
+                        <br>
+                        <label class="inline-block w-1/5">Clothes: </label>
+                        <input id="clothes-field" class="rounded-lg w-2/5 mb-2 px-2 py-2 mx-4 bg-gray-300 hover:focus:text-base"
+                            type="number" name="">
+                    </div>
+                    <!-- calculate button -->
+                    <div>
+                        <button id="btn-calculate"
+                            class="rounded-lg btn btn-info py-2 px-2 w-1/3 mt-5 text-white bg-sky-700">Calculate</button>
+                    </div>
+                    <!-- total expenses and balance -->
+                    <div>
+                        <h2 class="m-5 font-medium">Total Expenses: <span id="total-expenses">0</span> </h2>
+                        <h2 class="mb-5 font-medium">Balance: <span id="balance">0</span> </h2>
+                    </div>
+                    <!-- savings calculation -->
+                    <div class="space-x-4">
+                        <h3 class="inline-block ">Save: </h3>
+                        <input id="save-field" class="rounded-lg text-center py-2 px-2 bg-gray-300 w-1/4 hover:focus:text-base"
+                            type="number" name="">
+                        <span>%</span>
+                        <button id="btn-save" class="rounded-lg btn btn-info py-2 px-2 w-1/5 text-white bg-sky-700">Save</button>
+                    </div>
+                    <!-- saving and remaining amount -->
+                    <div>
+                        <h2 class="mt-5 font-medium">Saving Amount: <span id="saving">0</span></h2>
+                        <h2 class="mt-5 font-medium">Remaining Amount: <span id="remaining">0</span></h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
